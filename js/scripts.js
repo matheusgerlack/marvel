@@ -41,10 +41,10 @@ $(function(){
 				console.log(containercharacters);//array of chars obj
 
 				$.each(containercharacters, function(i, containercharacters){
-					names[i].push(containercharacters.name);
-					thumbs[i].push(containercharacters.thumbnail); 
+					names.push(containercharacters.name);
+					thumbs.push(containercharacters.thumbnail); 
 				});
-					
+					console.log(thumbs.length);
 					$.each(thumbs, function(i, thumbs){
 					thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
 					$(".row").append('<div class="col-md-6 col-xm-12 storycharacters"></div>');
