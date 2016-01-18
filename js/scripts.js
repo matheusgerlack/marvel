@@ -28,7 +28,7 @@ $(function(){
 		
 			var thumbs = [];
 			var containercharacters = [];
-			var imagevariant = 'portrait_uncanny';
+			var imagevariant = 'portrait_fantastic';
 			var thumbsext = [];
 			var names = [];
 
