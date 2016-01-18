@@ -1,0 +1,21 @@
+.body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.story {
+  background-color: #555;
+  color: #eee;
+}
+
+.story .row h3{
+  color: #777; 
+}
+
+.footer{
+  background-color: #222;
+}
+
+.footer p{
+  padding: 10px;
+  text-align: center;
+}
