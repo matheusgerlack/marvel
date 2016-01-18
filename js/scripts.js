@@ -47,7 +47,7 @@ $(function(){
 					
 					$.each(thumbs, function(i, thumbs){
 					thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
-					$(".story"). append('<div class="col-md-6 col-xm-12 storycharacters"></div>');
+					$(".row").append('<div class="col-md-6 col-xm-12 storycharacters"></div>');
 					$(".storycharacters").append('<h3>' + names[i] + '</h3>');//>>to HTML CHAR NAME
 					$(".storycharacters").append('<img src =' + ' " ' + thumbsext[i] + ' " ' + 'class="img-responsive"/>'  );//append to img URL
 					});					
