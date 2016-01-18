@@ -12,6 +12,11 @@ body{
   color: #777;
 }
 
+.story .row > h3{
+  color: #222; 
+  font-weight: 400;
+}
+
 .story .row h3{
   color: #222; 
   font-weight: 300;
