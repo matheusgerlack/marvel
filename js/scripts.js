@@ -25,10 +25,10 @@ $(function(){
 			
 		//>>nested API call (characters)
 		
-			var thumbs = [];
-			var containercharacters = [];
+			var thumbs = {};
+			var containercharacters = {};
 			var imagevariant = 'portrait_uncanny';
-			var thumbsext = [];
+			var thumbsext = {};
 
 			 $.ajax({
     	  		
