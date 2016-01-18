@@ -12,6 +12,7 @@ $(function(){
 	  success: function(data) {
 	  	containerstories = data.data.results;//get the array of results we want to work!
 		$('footer').append(data.attributionHTML);
+		$('.row').prepend('<h3>Featuring:</h3>');
 
 		//get title and description of the story	
 		$.each(containerstories, function(i, containerstories){
