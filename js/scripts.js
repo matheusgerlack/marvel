@@ -15,9 +15,9 @@ $(function(){
 		//get title and description of the story	
 		$.each(containerstories, function(i, containerstories){
 		console.log(containerstories.title);//title
-			$(".storytitle").append('<h1>' + containerstories.title + '</h1>');//>>to HTML STORY TITLE
+			$("#storytitle").append(containerstories.title);//>>to HTML STORY TITLE
 		console.log(containerstories.description);//description
-			$(".storydescription").append('<p>' + containerstories.description + '</p>');//>>to HTML STORY DESCRIPTION
+			$("#storydescription").append(containerstories.description);//>>to HTML STORY DESCRIPTION
 
 		charactersobj = containerstories.characters;
 		console.log(charactersobj);//chars obj
@@ -68,7 +68,3 @@ $(function(){
 //main function closes
 });	
 
-
-//////////////////////html classes////////////////////////////
-//.storytitle ->h1
-//.storydescription ->p
