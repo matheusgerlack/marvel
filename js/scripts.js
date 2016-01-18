@@ -41,17 +41,18 @@ $(function(){
 
 				$.each(containercharacters, function(i, containercharacters){
 					$(".storycharacters").append('<h3>' + containercharacters.name + '</h3>');//>>to HTML CHAR NAME
+				
+				});
 					thumbs.push(containercharacters.thumbnail); 
 					console.log(thumbs);
-				});
-				
+					
 					$.each(thumbs, function(i, thumbs){
-					thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
-					$(".storycharacters").append('<img src =' + ' " ' + thumbsext + ' " ' + 'class="img-responsive"/>'  );//append to img URL
-					console.log(thumbsext);
+					
 						
 					});					
-	  		    
+	  		    thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
+					$(".storycharacters").append('<img src =' + ' " ' + thumbsext + ' " ' + 'class="img-responsive"/>'  );//append to img URL
+					console.log(thumbsext);
 	  		  }//nested success closes
 	  		  
 	  	    });//nested ajax and main function closes
