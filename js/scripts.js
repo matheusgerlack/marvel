@@ -29,6 +29,7 @@ $(function(){
 			var containercharacters = [];
 			var imagevariant = 'portrait_uncanny';
 			var thumbsext = [];
+			var names = [];
 
 			 $.ajax({
     	  		
