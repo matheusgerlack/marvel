@@ -15,9 +15,9 @@ $(function(){
 		//get title and description of the story	
 		$.each(containerstories, function(i, containerstories){
 		console.log(containerstories.title);//title
-			$("#storytitle").append(containerstories.title);//>>to HTML STORY TITLE
+			$(".story").append('<h1>' + containerstories.title + </h1>);//>>to HTML STORY TITLE
 		console.log(containerstories.description);//description
-			$("#storydescription").append(containerstories.description);//>>to HTML STORY DESCRIPTION
+			$(".story").append('<p>' + containerstories.description + '</p>');//>>to HTML STORY DESCRIPTION
 
 		charactersobj = containerstories.characters;
 		console.log(charactersobj);//chars obj
@@ -40,19 +40,13 @@ $(function(){
 				console.log(containercharacters);//array of chars obj
 
 				$.each(containercharacters, function(i, containercharacters){
-				console.log(containercharacters.name);//NAME of chars
-					$("#name").append(containercharacters.name);//>>to HTML CHAR NAME
-				console.log(containercharacters.thumbnail);//Thumbnail Object
+					$(".storycharacters").append('<h3>' + containercharacters.name + '</h3>');//>>to HTML CHAR NAME
 					thumbs.push(containercharacters.thumbnail); 
 				});
 				
 					$.each(thumbs, function(i, thumbs){
-					console.log(thumbs.path);//thumb url
-					console.log(thumbs.extension);//thumb ext
-						thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
-					console.log(thumbsext);	//>>to HTML CHAR THUMBNAIL
-					//add function to append to img URL
-
+					thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
+					$(".storycharacters").append('<img src =' + ' " ' + thumbsext + ' " ' + 'class="img-responsive"/>'  );//append to img URL
 					});					
 	  		    
 	  		  }//nested success closes
