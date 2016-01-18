@@ -40,15 +40,14 @@ $(function(){
 				console.log(containercharacters);//array of chars obj
 
 				$.each(containercharacters, function(i, containercharacters){
-					$(".storycharacters").append('<h3>' + containercharacters.name + '</h3>');//>>to HTML CHAR NAME
+					names.push(containercharacters.name);
 					thumbs.push(containercharacters.thumbnail); 
-					console.log(thumbs);
 				});
 					
 					$.each(thumbs, function(i, thumbs){
 					thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
+					$(".storycharacters").append('<h3>' + names[i] + '</h3>');//>>to HTML CHAR NAME
 					$(".storycharacters").append('<img src =' + ' " ' + thumbsext[i] + ' " ' + 'class="img-responsive"/>'  );//append to img URL
-					console.log(thumbsext);
 					});					
 	  		    
 	  		  }//nested success closes
