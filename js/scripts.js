@@ -15,10 +15,9 @@ $(function(){
 
 		//get title and description of the story	
 		$.each(containerstories, function(i, containerstories){
-		console.log(containerstories.title);//title
 			$(".story").prepend('<h1>' + containerstories.title + '</h1>');//>>to HTML STORY TITLE
-		console.log(containerstories.description);//description
 			$(".story").prepend('<p>' + containerstories.description + '</p>');//>>to HTML STORY DESCRIPTION
+			console.log(containerstories.description);
 
 		charactersobj = containerstories.characters;
 		console.log(charactersobj);//chars obj
