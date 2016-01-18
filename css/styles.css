@@ -3,8 +3,8 @@
 }
 
 .story {
-  background-color: #333;
-  color: #eee;
+  background-color: #eee;
+  color: #222;
   padding: 10px;
   font-height: 300;
 }
@@ -15,7 +15,7 @@
 }
 
 .story .row h3{
-  color: #eee; 
+  color: #222; 
   font-height: 300;
 }
 
