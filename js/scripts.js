@@ -11,6 +11,7 @@ $(function(){
 	  data: { 'apikey' :'5005d198aef54a39e7f85e63d6cfe7e8' },
 	  success: function(data) {
 	  	containerstories = data.data.results;//get the array of results we want to work!
+		$(footer).append(data.attributionHTML);
 
 		//get title and description of the story	
 		$.each(containerstories, function(i, containerstories){
