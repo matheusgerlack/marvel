@@ -22,10 +22,6 @@ body{
   margin-right:auto;
 }
 
-footer {
-  background-color: #777;  
-}
-
 footer a{
-  padding: 20px;
+  padding-top: 10px;
 }
