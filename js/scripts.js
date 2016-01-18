@@ -47,6 +47,8 @@ $(function(){
 					$.each(thumbs, function(i, thumbs){
 					thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
 					$(".storycharacters").append('<img src =' + ' " ' + thumbsext + ' " ' + 'class="img-responsive"/>'  );//append to img URL
+					cnosole.log(thumbsext);
+						
 					});					
 	  		    
 	  		  }//nested success closes
