@@ -25,10 +25,10 @@ $(function(){
 			
 		//>>nested API call (characters)
 		
-			var thumbs = {};
-			var containercharacters = {};
+			var thumbs = [];
+			var containercharacters = [];
 			var imagevariant = 'portrait_uncanny';
-			var thumbsext = {};
+			var thumbsext = [];
 
 			 $.ajax({
     	  		
@@ -41,13 +41,13 @@ $(function(){
 
 				$.each(containercharacters, function(i, containercharacters){
 					$(".storycharacters").append('<h3>' + containercharacters.name + '</h3>');//>>to HTML CHAR NAME
-					thumbs.push(containercharacters.thumbnail[i]); 
+					thumbs.push(containercharacters.thumbnail); 
 					console.log(thumbs);
 				});
 					
 					$.each(thumbs, function(i, thumbs){
 					thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
-					$(".storycharacters").append('<img src =' + ' " ' + thumbsext + ' " ' + 'class="img-responsive"/>'  );//append to img URL
+					$(".storycharacters").append('<img src =' + ' " ' + thumbsext[i] + ' " ' + 'class="img-responsive"/>'  );//append to img URL
 					console.log(thumbsext);
 					});					
 	  		    
