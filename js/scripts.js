@@ -48,7 +48,7 @@ $(function(){
 					$.each(thumbs, function(i, thumbs){
 					thumbsext.push(thumbs.path + '/' + imagevariant + '.' + thumbs.extension);
 					var namestoappend = '<h3>' + names[i] + '</h3>' ;
-					var thumbstoappend = '<img src =' + ' " ' + thumbsext[i] + ' " ' + 'class="img-responsive"/> ;
+					var thumbstoappend = '<img src =' + ' " ' + thumbsext[i] + ' " ' + 'class="img-responsive"/>' ;
 					$(".row").append('<div class="col-md-6 col-xm-12">' + namestoappend + thumbstoappend + '</div>');
 					});					
 	  		    
