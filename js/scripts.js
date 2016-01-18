@@ -41,8 +41,8 @@ $(function(){
 				console.log(containercharacters);//array of chars obj
 
 				$.each(containercharacters, function(i, containercharacters){
-					names.push(containercharacters.name);
-					thumbs.push(containercharacters.thumbnail); 
+					names[i].push(containercharacters.name);
+					thumbs[i].push(containercharacters.thumbnail); 
 				});
 					
 					$.each(thumbs, function(i, thumbs){
