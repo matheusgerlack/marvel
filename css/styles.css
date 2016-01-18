@@ -22,7 +22,6 @@
   margin-right:auto;
 }
 
-footer p{
-  margin: 10px;
-  text-align: center;
+footer a{
+  padding: 10px;
 }
