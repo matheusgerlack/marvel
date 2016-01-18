@@ -3,7 +3,7 @@
 }
 
 .story {
-  background-color: #555;
+  background-color: #333;
   color: #eee;
 }
 
@@ -11,11 +11,11 @@
   color: #777; 
 }
 
-.footer{
+footer{
   background-color: #222;
 }
 
-.footer p{
+footer p{
   padding: 10px;
   text-align: center;
 }
