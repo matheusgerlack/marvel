@@ -17,7 +17,9 @@ $(function(){
 		$.each(containerstories, function(i, containerstories){
 			$(".story").prepend('<h1>' + containerstories.title + '</h1>');//>>to HTML STORY TITLE
 			$(".story").prepend('<p>' + containerstories.description + '</p>');//>>to HTML STORY DESCRIPTION
-			console.log(typeof containerstories.description);
+			if(containerstories.description === ""){
+				console.log("this is empty!");
+			}
 
 		charactersobj = containerstories.characters;
 		console.log(charactersobj);//chars obj
