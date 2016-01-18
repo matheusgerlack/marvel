@@ -16,9 +16,11 @@ $(function(){
 		//get title and description of the story	
 		$.each(containerstories, function(i, containerstories){
 			$(".story").prepend('<h1>' + containerstories.title + '</h1>');//>>to HTML STORY TITLE
-			$(".story").prepend('<p>' + containerstories.description + '</p>');//>>to HTML STORY DESCRIPTION
-			if(containerstories.description = ""){
-				console.log("this is empty!");
+			
+			if(containerstories.description === ""){
+				$(".story").prepend('<p> Description unavaiable at database.</p>');//>>to HTML STORY DESCRIPTION
+			}else{
+				$(".story").prepend('<p>' + containerstories.description + '</p>');//>>to HTML STORY DESCRIPTION	
 			}
 
 		charactersobj = containerstories.characters;
