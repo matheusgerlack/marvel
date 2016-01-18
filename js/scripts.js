@@ -41,7 +41,7 @@ $(function(){
 
 				$.each(containercharacters, function(i, containercharacters){
 				console.log(containercharacters.name);//NAME of chars
-					$(".name").append('<h2>' + containercharacters.name + '</h2>');//>>to HTML CHAR NAME
+					$("#name").append(containercharacters.name);//>>to HTML CHAR NAME
 				console.log(containercharacters.thumbnail);//Thumbnail Object
 					thumbs.push(containercharacters.thumbnail); 
 				});
