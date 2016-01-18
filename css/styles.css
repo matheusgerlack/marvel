@@ -6,6 +6,7 @@
   background-color: #333;
   color: #eee;
   padding: 10px;
+  font-height: 300;
 }
 
 .story p{
@@ -15,6 +16,7 @@
 
 .story .row h3{
   color: #eee; 
+  font-height: 300;
 }
 
 footer{
